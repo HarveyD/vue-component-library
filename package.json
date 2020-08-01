@@ -1,0 +1,31 @@
+{
+  "name": "vue-component-library",
+  "version": "1.0.0",
+  "description": "A Vue component library skeleton using TypeScript, Rollup and Storybook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^2.6.11",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.4.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "typescript": "~3.9.3",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "keywords": [
+    "vue",
+    "rollup",
+    "typescript",
+    "storybook",
+    "component",
+    "library"
+  ],
+  "author": "Harvey Delaney",
+  "license": "MIT"
+}
