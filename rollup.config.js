@@ -1,8 +1,9 @@
-// import typescript from "@rollup/plugin-typescript";
-import vue from "rollup-plugin-vue";
+import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import resolve from "@rollup/plugin-node-resolve";
-import typescript from "rollup-plugin-typescript2";
 import commonjs from "@rollup/plugin-commonjs";
+import typescript from "rollup-plugin-typescript2";
+import vue from "rollup-plugin-vue";
+
 import packageJson from "./package.json";
 
 export default {
@@ -19,8 +20,8 @@ export default {
       sourcemap: true
     }
   ],
-  external: ["vue", "vue-class-component", "vue-property-decorator"],
   plugins: [
+    peerDepsExternal(),
     resolve(),
     commonjs(),
     typescript({ useTsconfigDeclarationDir: true }),
