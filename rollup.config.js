@@ -20,11 +20,5 @@ export default {
       sourcemap: true
     }
   ],
-  plugins: [
-    peerDepsExternal(),
-    resolve(),
-    commonjs(),
-    typescript({ useTsconfigDeclarationDir: true }),
-    vue()
-  ]
+  plugins: [peerDepsExternal(), resolve(), commonjs(), typescript(), vue()]
 };
