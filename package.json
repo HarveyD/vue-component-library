@@ -1,9 +1,12 @@
 {
   "name": "vue-component-library",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "A Vue component library skeleton using TypeScript, Rollup and Storybook",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "rollup -c"
   },
@@ -23,7 +26,6 @@
     "rollup-plugin-peer-deps-external": "^2.2.3",
     "rollup-plugin-typescript2": "^0.27.2",
     "rollup-plugin-vue": "^5.1.6",
-    "tslib": "^2.0.0",
     "typescript": "^3.9.7",
     "vue-template-compiler": "^2.6.11"
   },
