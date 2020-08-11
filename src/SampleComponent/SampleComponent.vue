@@ -10,8 +10,8 @@ import { Component, Prop, Vue } from "vue-property-decorator";
 
 @Component
 export default class SampleComponent extends Vue {
-  @Prop() private headingText: string = "This is a sample component";
-  @Prop() private bodyText: string = "Made with love by Harvey";
+  @Prop() private headingText: string = "";
+  @Prop() private bodyText: string = "";
 }
 </script>
 
