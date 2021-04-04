@@ -1,13 +1,30 @@
 {
   "compilerOptions": {
-    "declarationDir": "lib",
     "target": "es5",
-    "module": "es2015",
-    "sourceMap": true,
-    "declaration": true,
-    "importHelpers": true,
+    "module": "esnext",
     "strict": true,
-    "experimentalDecorators": true
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "declaration": true,
+    "declarationDir": "lib",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx",
+    "src/index.ts"
+  ],
+  "exclude": []
 }
