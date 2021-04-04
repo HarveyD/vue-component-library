@@ -6,17 +6,23 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "vue-property-decorator";
+import { Options, Vue } from "vue-class-component";
 
-@Component
+@Options({
+  props: {
+    headingText: String,
+    bodyText: String
+  }
+})
 export default class SampleComponent extends Vue {
-  @Prop() private headingText: string = "This is a sample component";
-  @Prop() private bodyText: string = "Made with love by Harvey";
+  headingText = "";
+  bodyText = "";
 }
 </script>
 
-<style>
+<style scoped>
 .sample-component-container {
+  font-family: Arial, Helvetica, sans-serif;
   padding: 40px;
   background-color: black;
   color: white;
