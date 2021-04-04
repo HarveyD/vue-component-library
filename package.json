@@ -4,10 +4,13 @@
   "description": "A Vue component library skeleton using TypeScript, Rollup and Storybook",
   "main": "lib/index.js",
   "module": "lib/index.esm.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook:export": "build-storybook",
     "test": "jest"
   },
   "peerDependencies": {
