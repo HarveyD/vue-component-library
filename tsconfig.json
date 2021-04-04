@@ -13,6 +13,7 @@
     "baseUrl": ".",
     "declaration": true,
     "declarationDir": "lib",
+    "types": ["jest"],
     "paths": {
       "@/*": ["src/*"]
     },
@@ -26,5 +27,5 @@
     "tests/**/*.tsx",
     "src/index.ts"
   ],
-  "exclude": []
+  "exclude": ["node_modules"]
 }

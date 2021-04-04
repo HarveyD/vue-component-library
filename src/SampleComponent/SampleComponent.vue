@@ -1,7 +1,7 @@
 <template>
   <div class="sample-component-container">
     <h2>{{ headingText }}</h2>
-    <h3>{{ bodyText }}</h3>
+    <p>{{ bodyText }}</p>
   </div>
 </template>
 
