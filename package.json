@@ -11,7 +11,8 @@
     "build": "rollup -c",
     "storybook": "start-storybook -p 6006",
     "storybook:export": "build-storybook",
-    "test": "jest"
+    "test": "jest",
+    "prepublishOnly": "npm run build"
   },
   "peerDependencies": {
     "vue": "^3.0.0",

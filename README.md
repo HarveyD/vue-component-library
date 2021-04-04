@@ -45,6 +45,20 @@ To export your Storybook as static files:
 npm run storybook:export
 ```
 
+## Publishing
+
+### Hosting via NPM
+
+First, make sure you have an NPM account and are [logged into NPM using the `npm login` command.](https://docs.npmjs.com/creating-a-new-npm-user-account)
+
+Then update the `name` field in `package.json` to reflect your NPM package name in your private or public NPM registry. Then run:
+
+```
+npm publish
+```
+
+The `"prepublishOnly": "npm run build"` script in `package.json` will execute before publish occurs, ensuring the `build/` directory and the compiled component library exist.
+
 ## Usage
 
 Let's say you created a public NPM package called `harvey-vue-component-library` with the `SampleComponent` component created in this repository.
@@ -86,4 +100,4 @@ export default {
 export default App;
 ```
 
-[Check out this Code Sandbox for a live example.](https://codesandbox.io/s/harvey-component-library-example-y2b60?file=/src/App.js)
+[Check out this Code Sandbox for a live example.](https://codesandbox.io/s/silly-taussig-zm0ni?file=/src/App.vue)
